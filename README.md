@@ -99,7 +99,6 @@ Based on the validation results, General Attention appears to be the most promis
 - However, while quantitative metrics like Validation Loss and PPL suggested General Attention as the top performer, human evaluation revealed that Additive Attention consistently produced more relevant and human-readable translations.
 - This highlights the importance of incorporating human judgment in model selection. While quantitative metrics provide valuable insights, they may not always fully capture the nuances of human language and the subjective quality of translations.
 - Based on these findings, the model utilizing Additive Attention was chosen for implementation in the web application, the model prioritises user experience and the quality of translated output as perceived by human users.
-- 
 ### Performance
 #### Performance Plot
 - General Attention Plot
