@@ -6,7 +6,7 @@ from helpers.utils import get_text_transform, my_tokenizer
 
 # Load the Meta Model (Tokenization & Vocabulary)
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-meta = pickle.load(open("../trained_models/meta-additive.pkl", "rb"))
+meta = pickle.load(open("models/meta-additive.pkl", "rb"))
 
 # Extract token and vocabulary transforms
 token_transform = meta["token_transform"]
@@ -43,7 +43,7 @@ model = Seq2SeqTransformer(enc, dec, PAD_IDX, PAD_IDX, device).to(device)
 model.apply(initialize_weights)
 
 # Load Pretrained Weights
-model.load_state_dict(torch.load("../trained_models/Seq2SeqTransformer-additive.pt", map_location=device))
+model.load_state_dict(torch.load("models/Seq2SeqTransformer-additive.pt", map_location=device))
 model.eval()
 
 
