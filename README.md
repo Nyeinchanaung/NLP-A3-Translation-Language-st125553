@@ -3,7 +3,7 @@
 #### AT82.05 Artificial Intelligence: Natural Language Understanding (NLU)
 
 ## GitHubLink:
--  https://github.com/Nyeinchanaung/NLP-A2-Language-Model-st125553 
+- https://github.com/Nyeinchanaung/NLP-A3-Translation-Language-st125553 
 
 ## Content
 - [Student Information](#student-information)
@@ -95,12 +95,11 @@ pds.tokenize("ဖေဖေနဲ့မေမေ၏ကျေးဇူးတရာ
 - General Attention achieves the lowest PPL on the validation set (54.171  ), further supporting its better generalization.
 
 #### Key Observations:
-Based on the validation results, General Attention appears to be the most promising model among the three tested. It exhibits lower training and validation losses, as well as the lowest PPL on the validation set, suggesting better model performance and generalization capabilities. </br>
-However, while quantitative metrics like Validation Loss and PPL suggested General Attention as the top performer, human evaluation revealed that Additive Attention consistently produced more relevant and human-readable translations.
-This highlights the importance of incorporating human judgment in model selection. While quantitative metrics provide valuable insights, they may not always fully capture the nuances of human language and the subjective quality of translations.</br>
-Based on these findings, the model utilizing Additive Attention was chosen for implementation in the web application, prioritizing the user experience and the quality of translated output as perceived by human users.
-</br>
-
+Based on the validation results, General Attention appears to be the most promising model among the three tested. It exhibits lower training and validation losses and the lowest PPL on the validation set, suggesting better model performance and generalization capabilities.
+- However, while quantitative metrics like Validation Loss and PPL suggested General Attention as the top performer, human evaluation revealed that Additive Attention consistently produced more relevant and human-readable translations.
+- This highlights the importance of incorporating human judgment in model selection. While quantitative metrics provide valuable insights, they may not always fully capture the nuances of human language and the subjective quality of translations.
+- Based on these findings, the model utilizing Additive Attention was chosen for implementation in the web application, the model prioritises user experience and the quality of translated output as perceived by human users.
+- 
 ### Performance
 #### Performance Plot
 - General Attention Plot
@@ -119,7 +118,7 @@ Based on these findings, the model utilizing Additive Attention was chosen for i
 ## Application
 ### Application Development
 The web application is built using `Streamlit`, a Python framework for creating interactive web apps. It provides a user-friendly interface for generating text using a pre-trained LSTM-based language model. Users can input a text prompt, adjust generation parameters, and view the generated text in real-time.
-### How to use webapp
+### How to use web app
 The application likely provides a user interface where users can:
 1) Input English text.
 2) Trigger the translation process using the selected model (Additive Attention in this case).
